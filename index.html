@@ -10,7 +10,9 @@
      <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
             	<script>
        	var delayDomComplete = function(){
-       		// do something
+       		for (var i = 0; i < 1000001; i++) {
+			console.log(i);
+		}
        	}
        	setTimeout(delayDomComplete, 7000);
        		
