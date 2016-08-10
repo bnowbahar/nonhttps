@@ -17,7 +17,18 @@
   		}
   		setTimeout(delayDom,2000);
 
-       	</script>
+   
+
+window.onload = function() {
+var showimage = function(){
+	var div = document.getElementById('hiddenimage');
+	var img = document.createElement('img');
+	img.setAttribute('src', 'smile-01.jpg');
+	div.appendChild(img);
+}
+setTimeout(showimage, 30000);
+}
+</script>
    </head>
    <body>
      <section class="page-header">
@@ -61,14 +72,6 @@
  
      </section>
  
-   <script>
-var showimage = function(){
-	var div = document.getElementById('hiddenimage');
-	var img = document.createElement('img');
-	img.setAttribute('src', 'smile-01.jpg');
-	div.appendChild(img);
-}
-setTimeout(showimage, 30000)
-</script>
+
    </body>
  </html>
